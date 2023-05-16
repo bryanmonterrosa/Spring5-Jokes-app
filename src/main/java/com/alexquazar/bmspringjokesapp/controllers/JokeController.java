@@ -18,7 +18,6 @@ public class JokeController {
     public String showJoke(Model model){
 
         model.addAttribute("joke", jokeService.getJoke());
-        System.out.println(jokeService.getJoke());
         return "index";
     }
 }
